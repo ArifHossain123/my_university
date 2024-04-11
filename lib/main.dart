@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
         primaryColor: Colors.blue,
@@ -29,7 +30,19 @@ class _MyUniversityState extends State<MyUniversity> {
       body: Column(
         children: <Widget>[
           TextFormField(
-            decoration: const InputDecoration(),
+            decoration: const InputDecoration(
+              labelText: 'Name',
+              labelStyle: TextStyle(
+                fontSize: 20,
+              ),
+              fillColor: Colors.white,
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(
+                  color: Colors.blue,
+                  width: 2,
+                ),
+              ),
+            ),
           ),
         ],
       ),
