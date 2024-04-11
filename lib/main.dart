@@ -21,7 +21,13 @@ class MyUniversity extends StatefulWidget {
 class _MyUniversityState extends State<MyUniversity> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('My University'),
+      ),
+      body: Column(),
+
+    );
   }
 }
 
