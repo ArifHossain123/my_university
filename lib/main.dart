@@ -1,24 +1,27 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyUniversity(),);
-}
-
-class MyUniversity extends StatelessWidget {
-  const MyUniversity({super.key});
-
-  
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+  runApp( MaterialApp(
       
       theme: ThemeData(
      brightness: Brightness.light,
         primaryColor: Colors.blue,
       
       ),
-      home: 
-    );
+      home: MyUniversity(),
+   ), );
+  }
+class MyUniversity extends StatefulWidget {
+  const MyUniversity({super.key});
+
+  @override
+  State<MyUniversity> createState() => _MyUniversityState();
+}
+
+class _MyUniversityState extends State<MyUniversity> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
 
