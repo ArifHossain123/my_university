@@ -27,7 +27,11 @@ class _MyUniversityState extends State<MyUniversity> {
         title: const Text('My University'),
       ),
       body: Column(
-        children: <Widget>[],
+        children: <Widget>[
+          TextFormField(
+            decoration: const InputDecoration(),
+          ),
+        ],
       ),
     );
   }
