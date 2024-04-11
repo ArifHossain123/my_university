@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp( MaterialApp(
-      
+  runApp(
+    MaterialApp(
       theme: ThemeData(
-     brightness: Brightness.light,
+        brightness: Brightness.light,
         primaryColor: Colors.blue,
-      
       ),
       home: MyUniversity(),
-   ), );
-  }
+    ),
+  );
+}
+
 class MyUniversity extends StatefulWidget {
   const MyUniversity({super.key});
 
@@ -25,9 +26,9 @@ class _MyUniversityState extends State<MyUniversity> {
       appBar: AppBar(
         title: const Text('My University'),
       ),
-      body: Column(),
-
+      body: Column(
+        children: <Widget>[],
+      ),
     );
   }
 }
-
