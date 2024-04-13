@@ -10,6 +10,13 @@ class StudentTextField extends StatefulWidget {
 class _StudentTextFieldState extends State<StudentTextField> {
   String studentName, studentID, studyProgram;
   double studentGPA;
+  getStudentName(name) {
+    this.studentName = name;
+  }
+
+  getStudentID(id) {
+    this.studentID = id;
+  }
 
   @override
   Widget build(BuildContext context) {
