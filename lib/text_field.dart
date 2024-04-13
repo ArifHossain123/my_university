@@ -8,7 +8,9 @@ class StudentTextField extends StatelessWidget {
     return Column(
       children: <Widget>[
         Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.only(
+            bottom: 10,
+          ),
           child: TextFormField(
             decoration: const InputDecoration(
               labelText: 'Name',
@@ -26,9 +28,7 @@ class StudentTextField extends StatelessWidget {
             onChanged: (String name) {},
           ),
         ),
-      const SizedBox(height: 20,),
       ],
-      
     );
   }
 }
