@@ -25,6 +25,7 @@ class _MyUniversityState extends State<MyUniversity> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue,
         title: const Text('My University'),
       ),
       body: Column(
