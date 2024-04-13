@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
-class StudentTextField extends StatelessWidget {
+class StudentTextField extends StatefulWidget {
   const StudentTextField({super.key});
+
+  @override
+  State<StudentTextField> createState() => _StudentTextFieldState();
+}
+
+class _StudentTextFieldState extends State<StudentTextField> {
+  String studentName, studentID, studyProgram;
+  double studentGPA;
 
   @override
   Widget build(BuildContext context) {
@@ -27,17 +35,40 @@ class StudentTextField extends StatelessWidget {
                   ),
                 ),
               ),
-              onChanged: (String name) {},
+              onChanged: (String name) {
+                getStudentName(name);
+              },
             ),
           ),
-        
-         Padding(
+          Padding(
+            padding: const EdgeInsets.only(
+              bottom: 20,
+            ),
+            child: TextFormField(
+                decoration: const InputDecoration(
+                  labelText: 'Student ID',
+                  labelStyle: TextStyle(
+                    fontSize: 20,
+                  ),
+                  fillColor: Colors.white,
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.blue,
+                      width: 2,
+                    ),
+                  ),
+                ),
+                onChanged: (String id) {
+                  getStudentID(id);
+                }),
+          ),
+          Padding(
             padding: const EdgeInsets.only(
               bottom: 20,
             ),
             child: TextFormField(
               decoration: const InputDecoration(
-                labelText: 'Name',
+                labelText: 'Study Program',
                 labelStyle: TextStyle(
                   fontSize: 20,
                 ),
@@ -49,52 +80,32 @@ class StudentTextField extends StatelessWidget {
                   ),
                 ),
               ),
-              onChanged: (String name) {},
+              onChanged: (String studyProgram) {
+                getStudentProgram(studyProgram);
+              },
             ),
           ),
-        
-         Padding(
+          Padding(
             padding: const EdgeInsets.only(
               bottom: 20,
             ),
             child: TextFormField(
-              decoration: const InputDecoration(
-                labelText: 'Name',
-                labelStyle: TextStyle(
-                  fontSize: 20,
-                ),
-                fillColor: Colors.white,
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(
-                    color: Colors.blue,
-                    width: 2,
+                decoration: const InputDecoration(
+                  labelText: 'GPA',
+                  labelStyle: TextStyle(
+                    fontSize: 20,
+                  ),
+                  fillColor: Colors.white,
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.blue,
+                      width: 2,
+                    ),
                   ),
                 ),
-              ),
-              onChanged: (String name) {},
-            ),
-          ),
-        
-         Padding(
-            padding: const EdgeInsets.only(
-              bottom: 20,
-            ),
-            child: TextFormField(
-              decoration: const InputDecoration(
-                labelText: 'Name',
-                labelStyle: TextStyle(
-                  fontSize: 20,
-                ),
-                fillColor: Colors.white,
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(
-                    color: Colors.blue,
-                    width: 2,
-                  ),
-                ),
-              ),
-              onChanged: (String name) {},
-            ),
+                onChanged: (String gpa) {
+                  getStudentGPA(gpa);
+                }),
           ),
         ],
       ),
