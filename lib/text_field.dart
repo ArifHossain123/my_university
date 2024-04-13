@@ -26,8 +26,9 @@ class StudentTextField extends StatelessWidget {
             onChanged: (String name) {},
           ),
         ),
-      
+      const SizedBox(height: 20,),
       ],
+      
     );
   }
 }
