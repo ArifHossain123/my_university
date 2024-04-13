@@ -30,19 +30,23 @@ class _MyUniversityState extends State<MyUniversity> {
       ),
       body: Column(
         children: <Widget>[
-          TextFormField(
-            decoration: const InputDecoration(
-              labelText: 'Name',
-              labelStyle: TextStyle(
-                fontSize: 20,
-              ),
-              fillColor: Colors.white,
-              focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(
-                  color: Colors.blue,
-                  width: 2,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: TextFormField(
+              decoration: const InputDecoration(
+                labelText: 'Name',
+                labelStyle: TextStyle(
+                  fontSize: 20,
+                ),
+                fillColor: Colors.white,
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Colors.blue,
+                    width: 2,
+                  ),
                 ),
               ),
+              onChanged: (String name) {},
             ),
           ),
         ],
