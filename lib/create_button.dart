@@ -8,6 +8,19 @@ class CreateButton extends StatefulWidget {
 }
 
 class _CreateButtonState extends State<CreateButton> {
+  createData() {
+    print('Created');
+  }
+    readData() {
+    print('Read');
+  }
+    updateData() {
+    print('Updated');
+  }
+    deleteData() {
+    print('Deleted');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -19,7 +32,9 @@ class _CreateButtonState extends State<CreateButton> {
               Colors.green,
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            createData();
+          },
           child: const Text(
             'Create',
             style: TextStyle(
@@ -37,7 +52,9 @@ class _CreateButtonState extends State<CreateButton> {
               Colors.blue,
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            readData();
+          },
           child: const Text(
             'Read',
             style: TextStyle(
@@ -55,7 +72,9 @@ class _CreateButtonState extends State<CreateButton> {
               Colors.orange,
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            updateData();
+          },
           child: const Text(
             'Update',
             style: TextStyle(
@@ -73,7 +92,9 @@ class _CreateButtonState extends State<CreateButton> {
               Colors.red,
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            deleteData();
+          },
           child: const Text(
             'Delete',
             style: TextStyle(
