@@ -106,23 +106,28 @@ class _StudentTextFieldState extends State<StudentTextField> {
               bottom: 20,
             ),
             child: TextFormField(
-                decoration: const InputDecoration(
-                  labelText: 'GPA',
-                  labelStyle: TextStyle(
-                    fontSize: 20,
-                  ),
-                  fillColor: Colors.white,
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.blue,
-                      width: 2,
-                    ),
+              decoration: const InputDecoration(
+                labelText: 'GPA',
+                labelStyle: TextStyle(
+                  fontSize: 20,
+                ),
+                fillColor: Colors.white,
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Colors.blue,
+                    width: 2,
                   ),
                 ),
-                onChanged: (String gpa) {
-                  getStudentGPA(gpa);
-                }),
+              ),
+              onChanged: (String gpa) {
+                getStudentGPA(gpa);
+              },
+            ),
           ),
+         const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [],
+          )
         ],
       ),
     );
