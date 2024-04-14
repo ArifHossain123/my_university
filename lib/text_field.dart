@@ -8,8 +8,9 @@ class StudentTextField extends StatefulWidget {
 }
 
 class _StudentTextFieldState extends State<StudentTextField> {
-  String studentName, studentID, studyProgram;
+  String studentName, studentID, studyProgramID;
   double studentGPA;
+
   getStudentName(name) {
     this.studentName = name;
   }
@@ -18,10 +19,13 @@ class _StudentTextFieldState extends State<StudentTextField> {
     this.studentID = id;
   }
 
-  getStudentProgramID(program) {
-    this.studyProgram =program;
+  getStudyProgramID(programID) {
+    this.studyProgramID = programID;
   }
 
+  getStudentGPA(gpa) {
+    this.studentGPA = double.parse(gpa);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +72,7 @@ class _StudentTextFieldState extends State<StudentTextField> {
                       color: Colors.blue,
                       width: 2,
                     ),
-                  ), 
+                  ),
                 ),
                 onChanged: (String id) {
                   getStudentID(id);
@@ -93,7 +97,7 @@ class _StudentTextFieldState extends State<StudentTextField> {
                 ),
               ),
               onChanged: (String programID) {
-                getStudentProgramID(programID);
+                getStudyProgramID(programID);
               },
             ),
           ),
