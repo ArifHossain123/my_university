@@ -10,7 +10,7 @@ class CreateButton extends StatefulWidget {
 class _CreateButtonState extends State<CreateButton> {
   @override
   Widget build(BuildContext context) {
-    return   Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
         ElevatedButton(
@@ -24,11 +24,13 @@ class _CreateButtonState extends State<CreateButton> {
             'Create',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 15,
+              fontSize: 13,
             ),
           ),
         ),
-        const SizedBox(width: 5,),
+        const SizedBox(
+          width: 5,
+        ),
         ElevatedButton(
           style: const ButtonStyle(
             backgroundColor: MaterialStatePropertyAll(
@@ -40,12 +42,12 @@ class _CreateButtonState extends State<CreateButton> {
             'Read',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 15,
+              fontSize: 14,
             ),
           ),
         ),
         const SizedBox(
-          width: 10,
+          width: 5,
         ),
         ElevatedButton(
           style: const ButtonStyle(
@@ -58,12 +60,12 @@ class _CreateButtonState extends State<CreateButton> {
             'Update',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 15,
+              fontSize: 13,
             ),
           ),
         ),
         const SizedBox(
-          width: 10,
+          width: 5,
         ),
         ElevatedButton(
           style: const ButtonStyle(
@@ -76,16 +78,11 @@ class _CreateButtonState extends State<CreateButton> {
             'Delete',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 15,
+              fontSize: 13,
             ),
           ),
         ),
-        const SizedBox(
-          width: 10,
-        ),
-   
       ],
-      
     );
   }
 }
