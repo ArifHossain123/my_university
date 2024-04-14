@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_university/create_button.dart';
 
 class StudentTextField extends StatefulWidget {
   const StudentTextField({super.key});
@@ -25,7 +26,7 @@ class _StudentTextFieldState extends State<StudentTextField> {
   }
 
   getStudentGPA(gpa) {
-    this.studentGPA = double.parse(gpa);
+    studentGPA = double.parse(gpa);
   }
 
   @override
@@ -125,27 +126,12 @@ class _StudentTextFieldState extends State<StudentTextField> {
               },
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              ElevatedButton(
-                style: const ButtonStyle(
-                  backgroundColor: MaterialStatePropertyAll(
-                    Colors.blue,
-                  ),
-                ),
-                onPressed: () {},
-                child: const Text(
-                  'Create',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-            ],
-          )
-        ],
+          const Row(children: [
+            CreateButton(),
+            
+          ],),
+          
+          ],
       ),
     );
   }
