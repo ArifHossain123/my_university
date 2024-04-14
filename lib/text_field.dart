@@ -8,8 +8,8 @@ class StudentTextField extends StatefulWidget {
 }
 
 class _StudentTextFieldState extends State<StudentTextField> {
-  String studentName, studentID, studyProgramID;
-  double studentGPA;
+  late String studentName, studentID, studyProgramID;
+  late double studentGPA;
 
   getStudentName(name) {
     this.studentName = name;
