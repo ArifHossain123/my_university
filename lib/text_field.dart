@@ -18,6 +18,11 @@ class _StudentTextFieldState extends State<StudentTextField> {
     this.studentID = id;
   }
 
+  getStudentProgramID(program) {
+    this.studyProgram =program;
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -63,7 +68,7 @@ class _StudentTextFieldState extends State<StudentTextField> {
                       color: Colors.blue,
                       width: 2,
                     ),
-                  ),
+                  ), 
                 ),
                 onChanged: (String id) {
                   getStudentID(id);
@@ -87,8 +92,8 @@ class _StudentTextFieldState extends State<StudentTextField> {
                   ),
                 ),
               ),
-              onChanged: (String studyProgram) {
-                getStudentProgram(studyProgram);
+              onChanged: (String programID) {
+                getStudentProgramID(programID);
               },
             ),
           ),
