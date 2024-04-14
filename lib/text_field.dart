@@ -12,15 +12,16 @@ class _StudentTextFieldState extends State<StudentTextField> {
   late double studentGPA;
 
   getStudentName(name) {
-    this.studentName = name;
+    studentName = name;
+    //this.studentName = name;
   }
 
   getStudentID(id) {
-    this.studentID = id;
+    studentID = id;
   }
 
   getStudyProgramID(programID) {
-    this.studyProgramID = programID;
+    studyProgramID = programID;
   }
 
   getStudentGPA(gpa) {
@@ -124,9 +125,25 @@ class _StudentTextFieldState extends State<StudentTextField> {
               },
             ),
           ),
-         const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [],
+            children: <Widget>[
+              ElevatedButton(
+                style: const ButtonStyle(
+                  backgroundColor: MaterialStatePropertyAll(
+                    Colors.blue,
+                  ),
+                ),
+                onPressed: () {},
+                child: const Text(
+                  'Create',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+            ],
           )
         ],
       ),
