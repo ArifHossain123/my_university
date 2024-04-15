@@ -14,7 +14,7 @@ class _StudentTextFieldState extends State<StudentTextField> {
 
   getStudentName(name) {
     studentName = name;
-    //this.studentName = name;
+
   }
 
   getStudentID(id) {
