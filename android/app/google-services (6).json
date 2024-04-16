@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "300557269861",
+    "firebase_url": "https://uni-information-update-default-rtdb.firebaseio.com",
+    "project_id": "uni-information-update",
+    "storage_bucket": "uni-information-update.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300557269861:android:21ae483ad0b0f353e1bf8c",
+        "android_client_info": {
+          "package_name": "my.university"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBddtLE1G81Qznp_WsDXC3Y1CX8ASYh0zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
